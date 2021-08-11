@@ -23,19 +23,52 @@
 
 // A. Dot Notation
 
+// var point = {
+//     x : 10,
+//     y : 20,
+//     z : 15
+// }
+
+// // console.log(point.x)
+// // console.log(point.y)
+// // console.log(point.z)
+// // console.log(point.x + point.y)
+
+
+// // B. Array Notation
+
+// console.log((point['x']))
+// console.log((point['x'] + point['z']))
+
+
+// Class 054: Setting Object Properties in JS
+
 var point = {
     x : 10,
     y : 20,
     z : 15
 }
 
-// console.log(point.x)
-// console.log(point.y)
-// console.log(point.z)
-// console.log(point.x + point.y)
+point.x = 45
+point.a = 16
+
+//console.log(point)
+//console.log(point.d)
+
+point ['y'] = 100
+
+var prop = 'z'
+point [prop] = 55
+
+//console.log(point)
+
+// Class 055: Remove Object Properties in JS
+
+point.a = undefined
+console.log(point)
+
+delete point.a
+
+console.log(point)
 
 
-// B. Array Notation
-
-console.log((point['x']))
-console.log((point['x'] + point['z']))
